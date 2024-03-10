@@ -1,0 +1,63 @@
+/*
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #ffffff;
+  height: 5rem;
+}
+
+header #navbar {
+  display: flex;
+  padding: 0 2rem; /*16px é o padrão para conversão (16px * 2rem) = 32px*/
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+header #navbar .nav-brand img {
+  width: 180px;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: .2s ease-in-out;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: #777777;
+}
